@@ -21,6 +21,6 @@ def step_when_user_searches(context, search_term):
 @then(u'the search results page should be displayed')
 def step_then_search_results_page_displayed(context):
     time.sleep(2)
-    assert "Google Search Results" in context.driver.title
+    assert "Dhaka" in context.driver.title
 
     context.driver.quit()
